@@ -35,15 +35,6 @@
       "balance": 10000,
       "deleted": false,
       "id": 5
-    },
-    {
-      "fullName": "Alma Lucas",
-      "email": "zamyk@mailinator.com",
-      "phone": "+1 (898) 171-1732",
-      "address": "Eius aliquid laudant",
-      "balance": 0,
-      "deleted": false,
-      "id": 6
     }
   ],
   "deposits": [
