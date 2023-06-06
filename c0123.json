@@ -35,6 +35,15 @@
       "balance": 10000,
       "deleted": false,
       "id": 5
+    },
+    {
+      "fullName": "Bianca Guzman",
+      "email": "naxytyta@mailinator.com",
+      "phone": "+1 (933) 462-3803",
+      "address": "Et perspiciatis ad ",
+      "balance": 0,
+      "deleted": false,
+      "id": 6
     }
   ],
   "deposits": [
