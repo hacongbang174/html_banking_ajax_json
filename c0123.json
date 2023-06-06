@@ -28,11 +28,11 @@
       "deleted": false
     },
     {
-      "fullName": "Jaden Butler",
-      "email": "jitys@mailinator.com",
-      "phone": "+1 (826) 763-6444",
-      "address": "Voluptatum a fugiat ",
-      "balance": 0,
+      "fullName": "Kasper Turner",
+      "email": "zojipec@mailinator.com",
+      "phone": "+1 (562) 516-6124",
+      "address": "Velit unde doloribu",
+      "balance": 10000,
       "deleted": false,
       "id": 5
     }
@@ -49,6 +49,12 @@
       "customerName": "NVA",
       "transactionAmount": 5000,
       "id": 2
+    },
+    {
+      "customerId": 5,
+      "customerName": "Jaden Butler",
+      "transactionAmount": 10000,
+      "id": 3
     }
   ],
   "withdraws": [

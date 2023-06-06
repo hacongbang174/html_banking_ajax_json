@@ -722,17 +722,6 @@
                     confirmButtonText: 'Yes, delete it!'
                 }).then((result) => {
                     if (result.isConfirmed) {
-                        $.ajax({
-                            headers: {
-                                'Accept': 'application/json',
-                                'Content-Type': 'application/json'
-                            },
-                            type: "DELETE",
-                            //tên API
-                            url: "http://localhost:3300/customers/" + customerId,
-                            //xử lý khi thành công
-                            // data: JSON.stringify(customer)
-                        })
                         Swal.fire({
                             position: 'top-end',
                             icon: 'success',
@@ -741,7 +730,14 @@
                             timer: 1500
                         })
                     }
+                    $.ajax({
+                        type: "DELETE",
+                        //tên API
+                        url: "http://localhost:3300/customers/" + customerId,
+                        //xử lý khi thành công
+                    })
                 })
+
             })
         }
 
@@ -899,7 +895,7 @@
                     recipient.balance = newBalanceRecipient;
 
                     let fees = +$('#fees').val();
-                    let feesAmount = (fees * transferAmount)/100;
+                    let feesAmount = (fees * transferAmount) / 100;
 
 
                     let transfer = {
