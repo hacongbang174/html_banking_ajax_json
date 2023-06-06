@@ -954,20 +954,16 @@
         });
 
         $('#btnUpdate').on('click', () => {
+
             let fullName = $('#fullNameUp').val();
             let email = $('#emailUp').val();
             let phone = $('#phoneUp').val();
-            let address = $('#addressUp').val();
-            let balance = 0;
-            let deleted = false;
+            let address = $('#addressUp').val()
             let customer = {
-                id: customerId,
                 fullName,
                 email,
                 phone,
-                address,
-                balance,
-                deleted
+                address
             }
             $.ajax({
                 headers: {
