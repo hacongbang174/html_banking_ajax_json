@@ -26,6 +26,24 @@
       "address": "Tenetur expedita nis",
       "balance": 100000,
       "deleted": false
+    },
+    {
+      "fullName": "Reece Kennedy",
+      "email": "vobigyfy@mailinator.com",
+      "phone": "+1 (371) 528-4575",
+      "address": "Fuga Eos saepe off",
+      "balance": 0,
+      "deleted": false,
+      "id": 5
+    },
+    {
+      "fullName": "Gay Curry",
+      "email": "hemiby@mailinator.com",
+      "phone": "+1 (772) 949-4079",
+      "address": "Dicta eum mollitia q",
+      "balance": 0,
+      "deleted": false,
+      "id": 6
     }
   ],
   "deposits": [
