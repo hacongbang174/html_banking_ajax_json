@@ -774,14 +774,13 @@
             })
                 .done((data) => {
                     customer = data;
- 
+                    $('#mdCreate').modal('hide');
                     console.log(data)
                     tbody.append(renderCustomer(customer))
-                    $('#fullNameCr').val() = '';
-                    $('#emailCr').val() = '';
-                    $('#phoneCr').val() = '';
-                    $('#addressCr').val() = '';
-                    $('#mdCreate').modal('hide');
+                    document.getElementById('fullNameCr').innerText = '';
+                    document.getElementById('emailCr').innerText = '';
+                    document.getElementById('phoneCr').innerText = '';
+                    document.getElementById('addressCr').innerText = '';
                 })
 
             // //chặn sự kiện mặc định của thẻ
