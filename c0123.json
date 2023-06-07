@@ -53,15 +53,6 @@
       "balance": 28000,
       "deleted": false,
       "id": 7
-    },
-    {
-      "fullName": "Hashim Mccarthy",
-      "email": "verety@mailinator.com",
-      "phone": "+1 (113) 945-3113",
-      "address": "Obcaecati est magna",
-      "balance": 0,
-      "deleted": false,
-      "id": 8
     }
   ],
   "deposits": [
