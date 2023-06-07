@@ -496,7 +496,6 @@
                     addEventDeposit();
                     addEventWithdraw();
                     addEventTransfer();
-                    // addEventHistoryDeposit();
                 })
                 .fail((error) => {
                     console.error(error);
@@ -778,10 +777,10 @@
                     $('#mdCreate').modal('hide');
                     console.log(data)
                     tbody.append(renderCustomer(customer))
-                    document.getElementById('fullNameCr').innerText = '';
-                    document.getElementById('emailCr').innerText = '';
-                    document.getElementById('phoneCr').innerText = '';
-                    document.getElementById('addressCr').innerText = '';
+                    $('#fullNameCr').val('');
+                    $('#emailCr').val('');
+                    $('#phoneCr').val('');
+                    $('#addressCr').val('');
                     addEventCreate();
                     addEventEdit();
                     addEventDelete();
@@ -820,12 +819,12 @@
                     .done((data) => {
                         let str = renderCustomer(data);
                         $('#tr_' + customerId).replaceWith(str);
-
+                        
+                        $('#mdDeposit').modal('hide');
+                        $('#transactionAmountDepo').val('');
                         addEventEdit();
                         addEventDeposit();
                         addEventDelete();
-
-                        $('#mdDeposit').modal('hide');
                     }),
                     $.ajax({
                         type: 'POST',
@@ -866,12 +865,13 @@
                     .done((data) => {
                         let str = renderCustomer(data);
                         $('#tr_' + customerId).replaceWith(str);
+                        $('#transactionAmountWd').val('');
+                        $('#mdWithdraw').modal('hide');
 
                         addEventEdit();
                         addEventWithdraw();
                         addEventDelete();
-
-                        $('#mdWithdraw').modal('hide');
+        
                     }),
                     $.ajax({
                         type: 'POST',
@@ -952,10 +952,15 @@
                 }).done((data) => {
                     let str = renderCustomer(data);
                     $('#tr_' + customerId).replaceWith(str);
+
+                    $('#transfer').val('');
+                    $('#total').val('');
+                    $('#mdTransfer').modal('hide');
+
                     addEventEdit();
                     addEventTransfer();
                     addEventDelete();
-                    $('#mdTransfer').modal('hide');
+                   
                 })
             })
         });
@@ -1014,5 +1019,5 @@
     </script>
 
 </body>
-
+    
 </html>

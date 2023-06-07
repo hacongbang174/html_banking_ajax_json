@@ -41,9 +41,27 @@
       "email": "naxytyta@mailinator.com",
       "phone": "+1 (933) 462-3803",
       "address": "Et perspiciatis ad ",
-      "balance": 0,
+      "balance": 20000,
       "deleted": false,
       "id": 6
+    },
+    {
+      "fullName": "Keegan Phillips",
+      "email": "buqymikuh@mailinator.com",
+      "phone": "+1 (822) 633-8044",
+      "address": "Est quo commodo dolo",
+      "balance": 28000,
+      "deleted": false,
+      "id": 7
+    },
+    {
+      "fullName": "Hashim Mccarthy",
+      "email": "verety@mailinator.com",
+      "phone": "+1 (113) 945-3113",
+      "address": "Obcaecati est magna",
+      "balance": 0,
+      "deleted": false,
+      "id": 8
     }
   ],
   "deposits": [
@@ -64,6 +82,36 @@
       "customerName": "Jaden Butler",
       "transactionAmount": 10000,
       "id": 3
+    },
+    {
+      "customerId": 7,
+      "customerName": "Keegan Phillips",
+      "transactionAmount": 50000,
+      "id": 4
+    },
+    {
+      "customerId": 1,
+      "customerName": "Hà Công Bằng",
+      "transactionAmount": 100000,
+      "id": 5
+    },
+    {
+      "customerId": 1,
+      "customerName": "Hà Công Bằng",
+      "transactionAmount": 100000,
+      "id": 6
+    },
+    {
+      "customerId": 1,
+      "customerName": "Hà Công Bằng",
+      "transactionAmount": 100000,
+      "id": 7
+    },
+    {
+      "customerId": 1,
+      "customerName": "Hà Công Bằng",
+      "transactionAmount": 100000,
+      "id": 8
     }
   ],
   "withdraws": [
@@ -101,6 +149,15 @@
       "transferAmount": 100000,
       "transactionAmount": 110000,
       "id": 3
+    },
+    {
+      "senderId": 7,
+      "recipientId": 6,
+      "fees": 10,
+      "feesAmount": 2000,
+      "transferAmount": 20000,
+      "transactionAmount": 22000,
+      "id": 4
     }
   ]
 }
